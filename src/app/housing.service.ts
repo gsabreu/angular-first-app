@@ -8,6 +8,10 @@ export class HousingService {
   
   constructor() { }
 
+  submitApplication(firstName: String, lastName: String, email:String) {
+    console.log(`Homes application received: firstName: ${firstName}, lastName: ${lastName}, email: ${email}.`);
+  }
+
   getallHousingLocations(): HousingLocation[]{
 	return this.housingLocationList;
   }
